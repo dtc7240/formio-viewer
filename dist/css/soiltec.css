@@ -1,0 +1,432 @@
+/* ==== for FORMIO VIEWER rendered forms ==== */
+ 
+/* formio header bar */
+	.navbar {
+		min-height: 20px;
+		max-height: 40px;
+	}
+	.navbar-brand {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.navbar-nav .navbar-link {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	
+	.po-hidden-columns-top {
+		margin-bottom: 0px;
+	}
+
+/* Logo */
+	.po-logo {
+		margin-left: 35px;
+	}
+	
+/* outer panel padding */
+	div.panel.panel-default {
+		padding-right: 5px;
+		padding-left: 5px;
+	}	
+
+/* ticket number size and color */
+	input#ticketNum {
+		font-size: x-large;
+		font-weight: 550;
+		color: red !important;
+	}
+
+/* align Ticket Number & Ticket Date labels with fields */
+	#form-group-ticketNumberLabel {
+		margin-top: 0px;
+		margin-right 5px;
+	}
+	.formio-component-ticketNumberLabel h4 {
+		margin-top: 0px;
+	}
+
+/* ticket date icon */
+	span.input-group-btn {
+		display: none;
+	}
+	
+/* condense customer, lease, rig and county section */
+div#form-group-lease, div#form-group-customer {
+	margin-bottom: 5px;
+}
+	
+/* column headers */
+	#form-group-panelPanel .panel-body {
+		margin-right: 5px;
+		margin-left: 0px;
+	}
+
+	.po-column-header {
+		margin-bottom: 5px;
+	}
+
+	.po-column-header .panel {
+		margin-bottom: 0px;
+	}
+
+/* work rows */
+	/* remove blank top row */
+	.panel {
+		margin-bottom: 0;
+	}
+	
+	.table>tbody>tr>th {
+		border-top: none;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	/* data rows */
+   .panel .po-heading {
+		 margin-bottom: 0px;
+		 margin-top: 10px;
+   }
+   #form-group-work-0-0 .input-group, #form-group-work-1-0 .input-group, #form-group-work-2-0 .input-group, #form-group-work-3-0 .input-group, #form-group-work-4-0 .input-group {
+		width: 100%;
+	}	
+
+   .po-heading .panel-body {
+		 margin-left: 20px;
+		 margin-right: 55px;
+		 padding-bottom: 0px;
+		 padding-top: 5px;
+   }
+
+   .po-panel-main .panel-body {
+		 padding-left: 10px;
+				 
+   }
+
+   .po-grid .row {
+		 offset: 1px;
+		 margin-left: 0px;
+		 margin-right: 0px;
+   }
+   .po-grid .col {
+		 padding-left: 3px;
+		 padding-right: 0px;
+   }
+	
+	.table>tbody>tr>td, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+		padding-top: 7px;
+		padding-right: 0px;
+		padding-bottom: 15px;
+		padding-left: 0px;
+
+	}
+
+	/* remove the delete row button */
+	tbody .btn, tbody .glyphicon  {
+		display: none;
+	}
+
+	/* right align number and currency components */
+		#priceViewer-0-0, #priceViewer-1-0, #priceViewer-2-0, #priceViewer-3-0, #priceViewer-4-0, #priceViewer-5-0 {
+			text-align: right;
+		}
+
+		#amountViewer-0-0, #amountViewer-1-0, #amountViewer-2-0, #amountViewer-3-0, #amountViewer-4-0, #amountViewer-5-0 {
+			text-align: right;
+		}
+	
+		.formio-component-amount .form-control, .formio-component-price .form-control, .formio-component-unitCount .form-control {
+			padding-right: 12px;
+			text-align: right;
+		}
+		#subtotalPreTax, #taxRateCity, #taxRateCounty, #taxRateState, #salesTaxCity, #salesTaxCounty, #salesTaxState, #grandTotal, #barrelsSolidWater, #barrelsLiquidWater, #barrelsSolidOil, #barrelsLiquidOil {
+			text-align: right;
+		}
+		#priceViewer-0-0, #priceViewer-1-0, #priceViewer-2-0, #priceViewer-3-0, #priceViewer-4-0, #priceViewer-5-0 {
+			text-align: right;
+		}
+
+		#amountViewer-0-0, #amountViewer-1-0, #amountViewer-2-0, #amountViewer-3-0, #amountViewer-4-0, #amountViewer-5-0 {
+			text-align: right;
+		}
+		
+	/* align Customer & Rig labels with fields */
+.formio-component-panelColumns2Html h4 {
+	margin-top: 0px;
+}
+
+/* align Lease & County labels with fields */
+.formio-component-panelColumns2Html3 h4 {
+	margin-top: 0px;
+}
+
+.formio-component-ticketNumberLabel, h4 {
+	margin-top: 5px;
+}
+
+.po-heading-column, .po-heading-column-left, .po-heading-column-right, .form-field-type-htmlelement {
+	margin-bottom: 0px;
+}
+
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+	padding-top: 5px;
+	padding-bottom: 0px;
+}
+
+#panelHeadings {
+	margin-bottom: 0px;
+
+}
+.po-column-outer>col-sm-6 col-sm-offset-0 col-sm-push-0 col-sm-pull-0
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+/* stamp section */
+	#stampPanel div.panel-body {
+		padding-top: 5px;
+		padding-bottom: 0px;
+	}
+	
+	/* remove PDF sizing buttons */
+		span.btn.btn-default.no-disable {
+			display: none;
+		}
+
+	/* stamp container */
+	.cust-stamp {
+		margin-left: 15px;
+	}
+	
+	.cust-stamp iframe {
+		height: 364px;
+		width: 101%;
+	}
+	
+/* totals section */
+	/* adjust widths of Subtotal and Estimated Total */
+		#form-group-subtotalPreTax > div > label, #form-group-grandTotal > div > label {
+			width: 45% !important;
+		}
+
+		#form-group-subtotalPreTax > div > div.input-group, #form-group-grandTotal > div > div.input-group {
+			width: 52% !important;
+			margin-left: 45% !important;
+		}
+
+	/* $ prefix */
+		.input-group-addon {
+			padding-right: 5px !important;
+			padding-left: 6px !important;
+		}
+
+	/* adjust alignment of columns */
+		#form-group-preTaxColumn {
+			margin-bottom: 0px;
+			padding-right: 20px;
+		}
+		#form-group-taxColumn {
+			margin-bottom: 0px;
+			padding-right: 20px;
+		}	
+		#form-group-grandTotal {
+			margin-bottom: 0px;
+			padding-right: 20px;
+		}
+		#form-group-postTaxColumn {
+			margin-bottom: 0px;
+		}
+
+/* barrel count section */
+
+	#form-group-barrelCounts {
+		margin-bottom: 0px;
+		padding-left: 15px;
+	}
+	
+	#barrelCounts.panel.panel-default {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	#barrelCounts .panel-body {
+		padding-top: 5px;
+		padding-bottom: 0px;
+	}
+
+	#form-group-barrelCounts .panel-heading {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: center;
+	}
+
+	#form-group-barrelColumns {
+		margin-bottom: 0px;
+		margin-right: 10px;
+	}
+
+	#barrelColumnsHtml3 {
+		padding-top: 30px;
+		padding-right: 5px;
+	}
+
+	#barrelColumnsHtml4 {
+		padding-top: 13px;
+		padding-right: 5px;
+	}
+
+/* signature section */
+	#form-group-signatureColumns {
+		margin-bottom: 5px;
+	}
+
+	#form-group-providerSignature, #form-group-customerSignature {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	.formio-signature-footer {
+		display: none;
+	}
+
+/* remove submit button */
+	.po-submit-button>button#submit {
+		display: none;
+	}
+
+/* remove PDF buttom (move to printing section when working) */
+	img[src^="assets/download-pdf"] {
+	  display: none;
+	}
+
+	div.container.main {
+		margin-top: 0px;
+	}
+	
+	div.ng-isolate-scope.formio-submission {
+		margin-top: 0px;
+	}
+
+	
+/* PRINTING */
+@media print {
+
+  @page {                
+    size: letter;
+    margin: 0mm;
+  }
+
+  html, body {
+    width: 1024px;
+  }
+
+  body {
+    margin: 0 auto;
+  }
+
+	/* bootstrap specific */
+	 [class*="col-sm-"] {
+		float: left;
+	  }
+
+	  [class*="col-xs-"] {
+		float: left;
+	  }
+
+	  .col-sm-12, .col-xs-12 {
+		width:100% !important;
+	  }
+
+	  .col-sm-11, .col-xs-11 {
+		width:91.66666667% !important;
+	  }
+
+	  .col-sm-10, .col-xs-10 {
+		width:83.33333333% !important;
+	  }
+
+	  .col-sm-9, .col-xs-9 {
+		width:75% !important;
+	  }
+
+	  .col-sm-8, .col-xs-8 {
+		width:66.66666667% !important;
+	  }
+
+	  .col-sm-7, .col-xs-7 {
+		width:58.33333333% !important;
+	  }
+
+	  .col-sm-6, .col-xs-6 {
+		width:50% !important;
+	  }
+
+	  .col-sm-5, .col-xs-5 {
+		width:41.66666667% !important;
+	  }
+
+	  .col-sm-4, .col-xs-4 {
+		width:33.33333333% !important;
+	  }
+
+	  .col-sm-3, .col-xs-3 {
+		width:25% !important;
+	  }
+
+	  .col-sm-2, .col-xs-2 {
+		width:16.66666667% !important;
+	  }
+
+	  .col-sm-1, .col-xs-1 {
+		width:8.33333333% !important;
+	  }
+
+	  .col-sm-1,
+	  .col-sm-2,
+	  .col-sm-3,
+	  .col-sm-4,
+	  .col-sm-5,
+	  .col-sm-6,
+	  .col-sm-7,
+	  .col-sm-8,
+	  .col-sm-9,
+	  .col-sm-10,
+	  .col-sm-11,
+	  .col-sm-12,
+	  .col-xs-1,
+	  .col-xs-2,
+	  .col-xs-3,
+	  .col-xs-4,
+	  .col-xs-5,
+	  .col-xs-6,
+	  .col-xs-7,
+	  .col-xs-8,
+	  .col-xs-9,
+	  .col-xs-10,
+	  .col-xs-11,
+	  .col-xs-12 {
+	  float: left !important;
+	  }
+
+	  body {
+		margin: 0;
+		padding: 0 !important;
+		min-width: 768px;
+	  }
+
+	  .container {
+		width: auto;
+		min-width: 750px;
+		border: none;
+	  }
+
+	  body {
+		font-size: 10px;
+	  }
+
+	  a[href]:after {
+		content: none;
+	  }
+}
+

@@ -17,8 +17,8 @@
     <script id="srcform" type="text/template"><div class="well src-form"><div class="form-group"><label for="formsrc">Form Embed URL</label><input type="text" class="form-control" id="formsrc" name="formsrc" placeholder="https://examples.form.io/example"></div><button type="submit" class="btn btn-primary" id="setsrc"><span class="glyphicon glyphicon-check" id="btnicon"></span> Show Form</button></div></script>
     <script id="loader" type="text/template"><div class="loader-wrapper"><div class="loader text-center"></div></div></script>
     <script src="lib/formiojs/formio.form.min.js"></script>
-    <script src="lib/seamless/seamless.child.min.js"></script>
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+    <script src="lib/seamless/seamless.parent.min.js"></script>
+    <link rel="stylesheet" media="all" href="lib/bootstrap/css/bootstrap.min.css" />
     <script type="text/javascript">
       var query = {};
       var parts = [];
@@ -78,14 +78,14 @@
       }
 
       if (query.theme) {
-        var cssLink = '<link rel="stylesheet" href="lib/bootswatch/dist/';
+        var cssLink = '<link rel="stylesheet" media="all" href="lib/bootswatch/dist/';
         cssLink += query.theme;
         cssLink += '/bootstrap.min.css" />';
         document.write(cssLink);
       }
     </script>
-    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="lib/formiojs/formio.form.min.css" />
+    <link rel="stylesheet" media="all" href="lib/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" media="all" href="lib/formiojs/formio.form.min.css" />
     <style type="text/css">
         .page-break-after {
             page-break-after: always;
@@ -158,6 +158,18 @@
             }
         }
     </style>
+
+	<!-- SOILTEC HEADER ADDITIONS -->
+	<!-- The numeral library loaded below is used by calculated fields on the form to format currecy fields in the Viewer -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+	<!-- ADD OUR OWN SOILTEC PROJECT CSS FILE -->
+    <link rel="stylesheet" media="all" href="css/soiltec.css" />
+	<!-- We also added a media="all" attribute to all of the stylesheet links in this document.  Chrome and Safari did not require it, but other browsers did.-->
+    <script>
+    	/* ADD A VARIABLE TO IDENTIFY THIS ENVIRONMENT */
+    	var inFormioViewer = true;
+    </script>
+
 </head>
 <body>
 <script type="text/javascript">
@@ -181,7 +193,7 @@
     <div id="formio"></div>
 </div>
 <script type="text/javascript">
-  window.seamless.connect({container: 'div.main', allowStyleInjection: true});
+//  window.seamless.connect({container: 'div.main', allowStyleInjection: true});
   var mainElem = document.getElementById('main');
   var preFormElem = document.getElementById('preform');
   var loader = document.getElementById('loader');
@@ -228,6 +240,10 @@
         }
       }
     });
+
+	if (submission) {
+		options.readOnly = true;
+	}
 
     Formio.icons = 'fontawesome';
     return Formio.createForm(formioElem, form, options)
